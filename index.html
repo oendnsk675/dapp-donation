@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Upstrim</title>
+</head>
+<link rel="stylesheet" href="./assets/css/style.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {},
+            screens: {
+                'xsm': {'max': '383px'},
+                'sm': {'max': '583px'},
+            }
+        }
+    }
+</script>
+<style>
+
+
+</style>
+<body class="bg-primary">
+    
+    <main class="mt-[5em] w-full flex justify-center items-center flex-col">
+        <h2 class="font-custom sm:text-xl text-2xl mb-14 color-primary"><span class="color-white">Upstrim</span> Donation</h2>
+        <span class="heading-account font-custom text-xs text-gray-50 hidden">Account Address:</span>
+        <div class="container-account">
+            <span class="account-info hidden font-custom text-sm">
+            </span>
+            <button id="btn-connect" class="bg-secondary px-3 py-1 rounded-md hover:opacity-60 transition-all duration-300">
+                Please connect to MetaMask First!
+            </button>
+        </div>
+        <div class="img-character">
+            <img src="./assets/img/character.png" class="sm:w-[122px]" alt="character donation">
+        </div>
+
+        
+
+        <span class="font-custom color-white balance sm:text-xs">- wei</span>
+
+        <div class="container-donation sm:w-[80%]">
+            <div class="form-group">
+                <input type="number" placeholder="100" name="donation" id="donation" class="input-donation">
+                <div class="satuan">wei</div>
+            </div>
+            <button type="button" class="btn-donation font-custom flex justify-center items-center">Donation</button>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.5/web3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/script.js"></script>
+    
+</body>
+</html>

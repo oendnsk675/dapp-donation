@@ -1,0 +1,125 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-donation {
+    display: flex;
+    width: 28%;
+    padding: 2em;
+    border: 1px solid steelblue;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-donation div.form-group {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.satuan {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0px 9px;
+    border-radius: 0 7px 7px 0;
+    background-color: steelblue;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-donation{
+    width: 95%;
+    height: 38px;
+    font-size: 18px;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: 1px solid steelblue;
+    padding: 0 8px;
+    outline: none;
+    background: none;
+}
+
+.btn-donation:hover{
+    background-color: steelblue;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+}
+
+.loader:hover{
+    fill: white;
+}
+
+.font-custom{
+    font-family: 'Press Start 2P', cursive;
+}
+
+.btn-donation {
+    margin-top: 16px;
+    transition: all;
+    transition-duration: 300ms;
+    font-weight: 500;
+    width: 100%;
+    font-size: small;
+    border-radius: 5px;
+    padding: 7px 0px;
+    background: none;
+    border: 1px solid steelblue;
+    color: steelblue;
+    cursor: pointer;
+}
+
+.color-primary {
+    color: steelblue;
+}
+
+.img-character {
+    position: relative;
+}
+
+.img-character img{
+    width: 80px;
+}
+
+.balance {
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.bg-primary {
+    background-color: rgb(2, 22, 37);
+}
+
+.bg-secondary {
+    background-color: steelblue;
+}
+
+.account-info {
+    padding: 6px 15px;
+    background-color: steelblue;
+    border-radius: 4px;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+
+.container-account {
+    margin-bottom: 1em;
+    margin-top: 10px;
+}
+
+.color-white {
+    color: whitesmoke;
+}
