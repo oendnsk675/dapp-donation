@@ -482,6 +482,8 @@ $( document ).ready(function(){
         }
     }
 
+    
+
     let loader = `<!-- loader -->
     <div class="loader loader--style8" title="7">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -507,7 +509,14 @@ $( document ).ready(function(){
 
     loading(true)
 
-    connect()
+    if(detectMetaMask()){
+        connect()
+    }else{
+        Swal.fire({
+            text: "Please install MetaMask Plugin In Your Browser!",
+            icon: 'warning'
+        })
+    }
 
     btnDonation.addEventListener("click", () => {
         if(inputDonation.value != ""){

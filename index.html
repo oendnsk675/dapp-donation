@@ -34,7 +34,14 @@
 
 </style>
 <body class="bg-primary">
-    
+    <!-- info -->
+    <div class="absolute z-20 top-0 right-0 p-5 flex flex-col items-end">
+        <svg onclick="toggleInfo(this)" xmlns="http://www.w3.org/2000/svg" role="button" width="24" height="24" class="fill-current text-white" viewBox="0 0 24 24"><path d="M13.25 7c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25.56-1.25 1.25-1.25 1.25.56 1.25 1.25zm10.75 5c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-2 0c0-5.514-4.486-10-10-10s-10 4.486-10 10 4.486 10 10 10 10-4.486 10-10zm-13-2v2h2v6h2v-8h-4z"/></svg>
+        <div class="w-[16rem] transition-all duration-300 opacity-0 p-3 bg-white rounded-br-md rounded-bl-md rounded-tl-md mt-3">
+            To run the application properly, you must install the <span class="font-semibold text-blue-400 underline">MetaMask</span> plugin in your favorite browser!
+        </div>
+    </div>
+    <!-- info -->
     <main class="mt-[5em] w-full flex justify-center items-center flex-col pb-20">
         <h2 class="font-custom sm:text-xl text-2xl mb-14 color-primary"><span class="color-white">Upstrim</span> Donation</h2>
         <span class="heading-account font-custom text-xs text-gray-50 hidden">Account Address:</span>
@@ -73,6 +80,10 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./assets/js/script.js"></script>
-    
+    <script>
+        function toggleInfo(el){
+            let target = $(el).next().toggleClass("opacity-100")
+        }
+    </script>
 </body>
 </html>
